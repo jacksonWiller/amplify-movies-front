@@ -5,7 +5,7 @@ import "./styles.css";
 
 interface DropdownItem {
   icon: React.ReactNode;
-  text: string;
+  text: string; 
   action: () => void;
 }
 

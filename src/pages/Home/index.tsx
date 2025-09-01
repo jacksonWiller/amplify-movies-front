@@ -1,7 +1,7 @@
 import screenBackground from "@/assets/background.png";
 import play from "@/assets/play.png";
 import save from "@/assets/save.png";
-import download from "@/assets/download.png";
+import download from "@/assets/Download.png";
 import share from "@/assets/share.png";
 import like from "@/assets/like.png";
 
