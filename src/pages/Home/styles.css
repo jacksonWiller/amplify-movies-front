@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.buttonNav {
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+/* .buttonNav:hover {
+  color: #00925d;
+} */
+
+.searchIcon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.searchIcon.expanded {
+  transform: scale(1.2);
+}
+
+.search {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  color: white;
+  margin-right: 1rem;
+  width: 200px;
+}
+
+.search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bellIcon {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.headerUser {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.buttonUser {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.buttonUser:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main {
+  background-color: #000000;
+  position: relative;
+}
+
+.mainScreen {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainScreen::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.6) 50%,
+    rgba(0, 0, 0, 0.9) 75%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.screenBackground {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.mainInfoGeneral {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.mainInfo {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: -150px;
+  color: #f0f0f0;
+}
+
+.mainInfo h1 {
+  font-size: 2.1rem;
+  margin: 16px 0 10px 0;
+  color: #ffffff;
+}
+
+.mainInfo p {
+  font-size: 1.2rem;
+  color: #aaaaaa;
+}
+
+.buttonActionCategory {
+  display: flex;
+  background-color: #4b4747;
+  border-radius: 4rem;
+  padding: 5px 20px;
+}
+
+.buttonsMain {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding-top: 30px;
+}
+
+.buttonsAlternatives {
+  position: absolute;
+  right: 20px;
+  top: 70%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.buttonsWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .mainInfo h1 {
+    font-size: 1.8rem;
+  }
+
+  .mainInfo p {
+    font-size: 1rem;
+  }
+
+  .buttonActionCategory {
+    padding: 4px 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainInfo {
+    margin-top: -100px;
+    align-items: flex-start;
+  }
+
+  .mainInfo h1 {
+    font-size: 1.5rem;
+    margin: 12px 0 8px 0;
+  }
+
+  .mainInfo p {
+    font-size: 0.9rem;
+  }
+
+  .buttonsMain {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .buttonsAlternatives {
+    position: static;
+    transform: none;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .buttonsWrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .buttonActionCategory {
+    padding: 3px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .buttonUser {
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .mainInfoGeneral {
+    bottom: 30px;
+    padding: 0 10px;
+  }
+
+  .mainInfo h1 {
+    font-size: 1.2rem;
+    margin: 8px 0 6px 0;
+  }
+
+  .mainInfo p {
+    font-size: 0.8rem;
+  }
+
+  .buttonsMain {
+    gap: 10px;
+  }
+
+  .buttonActionCategory {
+    padding: 3px 12px;
+    font-size: 0.8rem;
+  }
+
+  .screenBackground {
+    width: 100%;
+    height: 60vh;
+    object-position: center;
+  }
+}
