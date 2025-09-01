@@ -1,14 +1,14 @@
-import screenBackground from "../../assets/background.png";
-import play from "../../assets/play.png";
-import save from "../../assets/save.png";
-import download from "../../assets/download.png";
-import share from "../../assets/share.png";
-import like from "../../assets/like.png";
+import screenBackground from "@/assets/background.png";
+import play from "@/assets/play.png";
+import save from "@/assets/save.png";
+import download from "@/assets/download.png";
+import share from "@/assets/share.png";
+import like from "@/assets/like.png";
 
-import Button from "../../components/Button";
-import "../../Reset.css";
+import Button from "@/components/Button";
+import "@/Reset.css";
 import "./styles.css";
-import Header from "../../components/Header";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (

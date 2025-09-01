@@ -3,10 +3,10 @@ import "./styles.css";
 
 import Button from "../Button";
 
-import logo from "../../assets/logo.png";
-import search from "../../assets/search.png";
-import bell from "../../assets/bell.png";
-import user from "../../assets/user.png";
+import logo from "@/assets/logo.png";
+import search from "@/assets/search.png";
+import bell from "@/assets/bell.png";
+import user from "@/assets/user.png";
 
 import { useNavigate } from "react-router-dom";
 import { User, Settings, HelpCircle, LogOut, SwitchCamera } from "lucide-react";
