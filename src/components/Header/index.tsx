@@ -59,7 +59,8 @@ const Header = () => {
       </div>
 
       <nav className="headerNav">
-        <Button text="Home" className="buttonNav" />
+        <Button text="Portfolio" className="buttonNav" onClick={() => navigate("/")} />
+        <Button text="Movies" className="buttonNav" onClick={() => navigate("/home")} />
         <Button text="Discover" className="buttonNav" />
         <Button text="Movie Release" className="buttonNav" />
         <Button text="Forum" className="buttonNav" />

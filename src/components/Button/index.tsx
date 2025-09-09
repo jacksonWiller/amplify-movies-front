@@ -5,6 +5,7 @@ interface Props {
   className?: string;
   text: string;
   variant?: "primary" | "secondary" | "danger";
+  onClick?: () => void;
 }
 
 import "./styles.css";
@@ -14,9 +15,10 @@ const Button: React.FC<Props> = ({
   text,
   className,
   variant = "primary",
+  onClick,
 }) => {
   return (
-    <button className={`button ${variant} ${className}`}>
+    <button className={`button ${variant} ${className}`} onClick={onClick}>
       {icon && <img src={icon} alt={text} height={20} width={20} />}
       {text}
     </button>
