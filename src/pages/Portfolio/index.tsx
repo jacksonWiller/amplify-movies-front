@@ -16,7 +16,6 @@ const Portfolio: React.FC = () => {
             <li><a href="#home">Início</a></li>
             <li><a href="#about">Sobre</a></li>
             <li><a href="#skills">Habilidades</a></li>
-            <li><a href="#projects">Projetos</a></li>
             <li><a href="#contact">Contato</a></li>
           </ul>
         </div>
@@ -26,13 +25,12 @@ const Portfolio: React.FC = () => {
       <section className="hero" id="home">
         <div className="hero-content">
           <h1>Jackson Duarte</h1>
-          <p className="subtitle">Desenvolvedor Full Stack</p>
+          <p className="subtitle">Desenvolvedor Backend</p>
           <p className="description">
-            Apaixonado por criar soluções digitais inovadoras e experiências únicas. 
-            Especialista em desenvolvimento web moderno com foco em performance e usabilidade.
+            Apaixonado por construir soluções digitais robustas e escaláveis.
+Especialista em desenvolvimento backend e infraestrutura moderna, com foco em segurança, performance e alta disponibilidade.
           </p>
           <div className="cta-buttons">
-            <a href="#projects" className="btn btn-primary">Ver Projetos</a>
             <a href="#contact" className="btn btn-secondary">Entre em Contato</a>
           </div>
         </div>
@@ -46,20 +44,16 @@ const Portfolio: React.FC = () => {
             👨‍💻
           </div>
           <div className="about-text">
-            <h3>Desenvolvedor Full Stack & UI/UX Designer</h3>
+            <h3>Desenvolvedor Backend</h3>
             <p>
-              Com mais de 5 anos de experiência em desenvolvimento web, sou especializado em criar 
-              aplicações robustas e interfaces intuitivas. Minha paixão é transformar ideias complexas 
-              em soluções digitais elegantes e funcionais.
+              Focado em desenvolvimento backend e arquitetura de sistemas, sempre buscando entregar soluções escaláveis, seguras e de alta performance
             </p>
             <p>
-              Trabalho com tecnologias modernas como React, Node.js, Python, .NET e diversas ferramentas 
-              de desenvolvimento. Sempre busco me manter atualizado com as últimas tendências e 
-              melhores práticas da indústria.
+              Experiência em Backend Development utilizando Node.js, Python (Django, Express.js), .NET Core e C#.
+Domínio na construção de RESTful APIs e GraphQL, além de bancos de dados relacionais e não-relacionais como MongoDB, PostgreSQL, MySQL e SQL Server.
             </p>
             <p>
-              Quando não estou codando, gosto de contribuir com projetos open source, escrever 
-              artigos técnicos e mentorear novos desenvolvedores.
+              Conhecimentos sólidos em cloud e containerização com AWS, Azure, Docker e Kubernetes, além de frameworks como ASP.NET, Entity Framework, Blazor e Web API.
             </p>
           </div>
         </div>
@@ -69,11 +63,6 @@ const Portfolio: React.FC = () => {
       <section className="section" id="skills">
         <h2>Habilidades</h2>
         <div className="skills-grid">
-          <div className="skill-card">
-            <div className="skill-icon">🚀</div>
-            <h3>Frontend Development</h3>
-            <p>React, Vue.js, Angular, HTML5, CSS3, JavaScript ES6+, TypeScript</p>
-          </div>
           <div className="skill-card">
             <div className="skill-icon">⚡</div>
             <h3>Backend Development</h3>
@@ -85,11 +74,6 @@ const Portfolio: React.FC = () => {
             <p>MongoDB, PostgreSQL, MySQL, SQL Server, AWS, Docker, Kubernetes</p>
           </div>
           <div className="skill-card">
-            <div className="skill-icon">🎨</div>
-            <h3>UI/UX Design</h3>
-            <p>Figma, Adobe XD, Responsive Design, Material Design, User Experience</p>
-          </div>
-          <div className="skill-card">
             <div className="skill-icon">🔧</div>
             <h3>.NET Development</h3>
             <p>.NET Core, ASP.NET, Entity Framework, Blazor, Web API, Azure Services</p>
@@ -98,94 +82,6 @@ const Portfolio: React.FC = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="section" id="projects">
-        <h2>Projetos</h2>
-        <div className="projects-grid">
-          <div className="project-card">
-            <div className="project-image">📱</div>
-            <div className="project-content">
-              <h3 className="project-title">E-Commerce Platform</h3>
-              <p className="project-description">
-                Plataforma completa de e-commerce com painel administrativo, 
-                sistema de pagamentos e gestão de inventário.
-              </p>
-              <div className="project-tech">
-                <span className="tech-tag">React</span>
-                <span className="tech-tag">Node.js</span>
-                <span className="tech-tag">MongoDB</span>
-                <span className="tech-tag">Stripe</span>
-              </div>
-              <div className="project-links">
-                <a href="#" className="project-link">Ver Projeto</a>
-                <a href="#" className="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div className="project-image">📊</div>
-            <div className="project-content">
-              <h3 className="project-title">Dashboard Analytics</h3>
-              <p className="project-description">
-                Dashboard interativo para análise de dados com gráficos em tempo real 
-                e relatórios personalizáveis.
-              </p>
-              <div className="project-tech">
-                <span className="tech-tag">Vue.js</span>
-                <span className="tech-tag">Python</span>
-                <span className="tech-tag">Chart.js</span>
-                <span className="tech-tag">PostgreSQL</span>
-              </div>
-              <div className="project-links">
-                <a href="#" className="project-link">Ver Projeto</a>
-                <a href="#" className="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div className="project-image">🎵</div>
-            <div className="project-content">
-              <h3 className="project-title">Music Streaming App</h3>
-              <p className="project-description">
-                Aplicativo de streaming de música com playlists personalizadas, 
-                player avançado e recomendações inteligentes.
-              </p>
-              <div className="project-tech">
-                <span className="tech-tag">React Native</span>
-                <span className="tech-tag">Express.js</span>
-                <span className="tech-tag">Redis</span>
-                <span className="tech-tag">AWS S3</span>
-              </div>
-              <div className="project-links">
-                <a href="#" className="project-link">Ver Projeto</a>
-                <a href="#" className="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div className="project-card">
-            <div className="project-image">🏢</div>
-            <div className="project-content">
-              <h3 className="project-title">Enterprise Management System</h3>
-              <p className="project-description">
-                Sistema corporativo completo para gestão de recursos humanos, 
-                financeiro e operacional desenvolvido em .NET.
-              </p>
-              <div className="project-tech">
-                <span className="tech-tag">.NET Core</span>
-                <span className="tech-tag">C#</span>
-                <span className="tech-tag">SQL Server</span>
-                <span className="tech-tag">Azure</span>
-              </div>
-              <div className="project-links">
-                <a href="#" className="project-link">Ver Projeto</a>
-                <a href="#" className="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Contact Section */}
       <section className="contact" id="contact">
@@ -203,12 +99,12 @@ const Portfolio: React.FC = () => {
               
               <div className="contact-item">
                 <div className="contact-icon">📱</div>
-                <span>+55 (11) 99999-9999</span>
+                <span>+55 38 9841-0324</span>
               </div>
               
               <div className="contact-item">
                 <div className="contact-icon">📍</div>
-                <span>São Paulo, SP - Brasil</span>
+                <span>Januária, MG- Brasil</span>
               </div>
             </div>
 
@@ -238,12 +134,8 @@ const Portfolio: React.FC = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="social-links">
-          <a href="#" className="social-link">🐱</a>
-          <a href="#" className="social-link">💼</a>
-          <a href="#" className="social-link">🐦</a>
-          <a href="#" className="social-link">📸</a>
         </div>
-        <p>&copy; 2025 Jackson Duarte. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Raisa Almeida. Todos os direitos reservados.</p>
       </footer>
     </div>
   );
